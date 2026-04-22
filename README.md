@@ -2,7 +2,7 @@
 
 Cinematic Requirements
 ----------------------------
-3+ scenes: My D1 Cinematic has a total of 6 scenes, which are Preload, Intro, Outside, Inside, Menu, and Credits.\
+3+ scenes: My D1 Cinematic has a total of 6 scenes, which are Preload, Intro, Outside, Inside, Menu, and Credits.
 
 2+ audio assets: The cinematic uses a total of four audio assets; the bell and pop sound are used with my logo animation in\
 the intro scene. The rain sounds are played in the outside scene, and the cafe music is played throughout the inside\
