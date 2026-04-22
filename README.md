@@ -1,4 +1,4 @@
-# CMPM80J-Cinematic-D1
+# CMPM120-Cinematic-D1
 
 Cinematic Requirements
 ----------------------------
