@@ -32,11 +32,18 @@ class Preload extends Phaser.Scene {
             progressBar.fillRoundedRect(centerX - 155, centerY - 10, 310 * value, 20, 8);
         });
 
+
         this.load.on('complete', () => {
             loadingText.setText('Ready! (๑>◡<๑)');
-            this.time.delayedCall(2000, () => {
-                this.scene.start('intro');
-            });
+            let clickText = this.add.text(centerX, centerY + 60 , 'Click to continue!', {
+            fontSize: '15px',
+            fill: '#ffffff',
+            fontStyle: 'bold'
+        }).setOrigin(0.5);
+
+            this.input.once("pointerdown", () => {
+               this.scene.start('intro'); 
+            })
         });
        
         //logo animation frames
@@ -389,6 +396,7 @@ let config = {
     type: Phaser.WEBGL,
     width: 800,
     height: 600,
+    parent: "root",
     backgroundColor: "#88A4CF",
     scene: [Preload, Intro, Outside, Inside, Menu, Credits]
 }
